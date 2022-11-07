@@ -43,7 +43,7 @@ console.log(data)
 
         if (consultaB == ""){
             console.log("No se encontraron resultados, verificar los datos ingresados y repetir la búsquededa nuevamente")
-            document.getElementById("resultadoBusquedaPp").innerHTML = ("No se encontraron resultados, verficar los datos ingresados y repetir la búsquededa nuevamente");
+            document.getElementById("resultadoBusquedaPp").innerHTML = ("No se encontraron resultados, verificar los datos ingresados y repetir la búsquededa nuevamente");
         } else{
 
             for (const resultadoBqB of consultaB) {
@@ -55,7 +55,7 @@ console.log(data)
            document.getElementById("montajeNeumaticos").innerHTML = ("Montaje Neumático: " + consultaB[0].montajeNeumaticos);
            document.getElementById("tipoMontaje").innerHTML = ("Tipo Montaje: " + consultaB[0].tipoMontaje);
            document.getElementById("materialLlanta").innerHTML = ("Material de la llanta: " + consultaB[0].materialLlanta);
-           document.getElementById("desplazamiento").innerHTML = ("Desplazamiento " + consultaB[0].desplazamiento);
+           document.getElementById("desplazamiento").innerHTML = ("Desplazamiento: " + consultaB[0].desplazamiento);
            document.getElementById("ejeDirrecionales").innerHTML = ("Eje Dirrecionales: " + consultaB[0].ejeDirrecionales);
            document.getElementById("tipoSistema").innerHTML = ("Tipo de sistema: " + consultaB[0].tipoSistema);
     }

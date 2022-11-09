@@ -55,41 +55,32 @@
                                         <div class="form-outline flex-fill mb-0">
                                             <label for="txtOrden">Marca del Eje:</label>
                                             <select id="datosBusquedaMarcaEje">
-                                              <option value="ma0" id="datosBusqueda" onchange="recargarDatos ()"></option>
-                                              <option value="ma2" id="datosBusqueda" onchange="recargarDatos ()">BPW</option>
-                                              <option value="ma3" id="datosBusqueda" onchange="recargarDatos ()">JOST</option>
-                                              <option value="ma4" id="datosBusqueda" onchange="recargarDatos ()">Mercedes</option>
-                                              <option value="ma5" id="datosBusqueda" onchange="recargarDatos ()">ROR</option>
-                                              <option value="ma6" id="datosBusqueda" onchange="recargarDatos ()">SAF</option>
-                                              <option value="ma7" id="datosBusqueda" onchange="recargarDatos ()">SCHMITZ</option>
-                                              <option value="ma8" id="datosBusqueda" onchange="recargarDatos ()">SAE/SMB</option>        
+                                              <option value="ma0" id="datosBusqueda" onchange="actualizarB ()">Seleccione Marca</option>
+                                              <option value="ma2" id="datosBusqueda" onchange="actualizarB ()">BPW</option>
+                                              <option value="ma3" id="datosBusqueda" onchange="actualizarB ()">JOST</option>
+                                              <option value="ma4" id="datosBusqueda" onchange="actualizarB ()">Mercedes</option>
+                                              <option value="ma5" id="datosBusqueda" onchange="actualizarB ()">ROR</option>
+                                              <option value="ma6" id="datosBusqueda" onchange="actualizarB ()">SAF</option>
+                                              <option value="ma7" id="datosBusqueda" onchange="actualizarB ()">SCHMITZ</option>
+                                              <option value="ma8" id="datosBusqueda" onchange="actualizarB ()">SAE/SMB</option>        
                                             </select>
                                           </div>
                                     </div>
                                     <div class="d-flex flex-row align-items-center mb-4">
-                                        <i class="fas fa-sharp fa-solid fa-filter fa-lg me-3 fa-fw"></i>
-                                        <div class="form-outline flex-fill mb-0">
-                                            <label for="txtFecha">Modelo del eje:</label>
-                                            <select id="datosBusquedaModeloEje">
-                                              <option value="mo0" id="datosBusqueda" onchange=""></option>
-                                              <option value="mo1" id="datosBusqueda" onchange="">Eco Plus 2</option>
-                                              <option value="mo2" id="datosBusqueda" onchange="">Eco Plus y Eco Plus 3</option>
-                                              <option value="mo3" id="datosBusqueda" onchange="">JOST</option>   
-                                              <option value="mo4" id="datosBusqueda" onchange="">Mercedes</option>
-                                              <option value="mo5" id="datosBusqueda" onchange="">SCHMITZ</option>
-                                              <option value="mo6" id="datosBusqueda" onchange="">ROR (43-50)</option>
-                                              <option value="mo7" id="datosBusqueda" onchange="">SAF (130mm)</option>
-                                              <option value="mo8" id="datosBusqueda" onchange="">SAF (150mm)</option>
-                                              <option value="mo9" id="datosBusqueda" onchange="">SAE/SMB (50-57)</option>
-                                            </select>
+                                      <i class="fas fa-solid fa-filter fa-lg me-3 fa-fw"></i>
+                                      <div class="form-outline flex-fill mb-0">
+                                          <label for="txtLinea">Modelo del eje:</label>
+                                          <select id="datosBusquedaModeloEje">
+                                            <option value="-1" id="" onchange="">Seleccione Modelo</option>
+                                          </select>                                        
                                         </div>
-                                    </div>                                    
+                                    </div>    
                                     <div class="d-flex flex-row align-items-center mb-4">
                                         <i class="fas fa-solid fa-filter fa-lg me-3 fa-fw"></i>
                                         <div class="form-outline flex-fill mb-0">
                                             <label for="txtLinea">Cantidad de ejes:</label>
                                             <select id="datosBusquedaCantidadEje">
-                                              <option value="mca0" id="datosBusqueda" onchange=""></option>
+                                              <option value="mca0" id="datosBusqueda" onchange="">Seleccione Cantidad Ejes</option>
                                               <option value="mca2" id="datosBusqueda" onchange="">2</option>
                                               <option value="mca3" id="datosBusqueda" onchange="">3</option>
                                             </select>                                        
@@ -100,7 +91,7 @@
                                         <div class="form-outline flex-fill mb-0">
                                             <label for="txtTipo">Montaje Neumático:</label>
                                             <select id="datosBusquedaMontajeNeumaticos">
-                                              <option value="mmn0" id="datosBusqueda" onchange=""></option>
+                                              <option value="mmn0" id="datosBusqueda" onchange="">Seleccione tipo de montaje</option>
                                               <option value="mmn1" id="datosBusqueda" onchange="">Simple</option>
                                               <option value="mmn2" id="datosBusqueda" onchange="">Gemelos</option>
                                             </select>
@@ -111,7 +102,7 @@
                                         <div class="form-outline flex-fill mb-0">
                                             <label for="txtTiempo">Ejes Direccionales:</label>
                                             <select id="datosBusquedaEjesDireccionales">
-                                              <option value="med0" id="datosBusqueda" onchange=""></option>
+                                              <option value="med0" id="datosBusqueda" onchange="">Seleccione cantidad ejes</option>
                                               <option value="med1" id="datosBusqueda" onchange="">1</option>
                                               <option value="med2" id="datosBusqueda" onchange="">No</option>
                                             </select>
@@ -122,7 +113,7 @@
                                         <div class="form-outline flex-fill mb-0">
                                             <label for="txtPrecio">Tipo Sistema:</label>
                                             <select id="datosBusquedaTipoSistema">
-                                              <option value="mtp0" id="datosBusqueda" onchange=""></option>
+                                              <option value="mtp0" id="datosBusqueda" onchange="">Seleccione tipo sistema</option>
                                               <option value="mtp1" id="datosBusqueda" onchange="">Autonomo</option>
                                               <option value="mtp2" id="datosBusqueda" onchange="">No autonomo</option>
                                             </select>                                      
@@ -130,6 +121,7 @@
                                     </div>
                                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                                         <button type="button" class="btn btn-primary btn-lg boton_card m-1" id="btnGenerarBusqueda">Generar Búsqueda</button>
+                                        <button type="button" class="btn btn-primary btn-lg boton_card m-1" id="btnBorrarDatosBusqueda">Borrar Datos Búsqueda</button>
                                     </div>
                                 </form>
                             </div>
@@ -173,12 +165,6 @@
     </div>
   </div>
 </Section>
-<section>
-  <div>Prueba:
-    <p id="pruebaNico"></p>
-
-  </div>
-</section>
   <footer class="text-center text-lg-start" id="footer_boot">
     <div class="container d-flex justify-content-center py-2"></div>
       <div class="container">
@@ -193,7 +179,7 @@
       </div>
     </div>
     <div>
-      <script type="module" src="../js/codificadornmeuropa.js"></script>
+      <script type="module" src="../js/codificadornmeuropafull.js"></script>
     </div>
   </footer>      
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
